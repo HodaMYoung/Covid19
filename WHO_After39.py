@@ -366,8 +366,8 @@ dfr=pd.DataFrame({'P0':[3,3,3,3,2,2,4,3,2,2,3,4,3,3,3,2,2,'NA','NA','NA','NA','N
 ncn=[8,1,7,6,6,4,3,4,2,3,2,0,1,0,0,3,0,1,1,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
      0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\
      0,0,0,0,0,0,0,0,0,0,0,0,0]
-pathb='/Users/Hoda/Documents/Covid19/WHO/Reports/covid-19_r'
-pathr='/Users/Hoda/Documents/Covid19/WHO/csv_files/CRWHO'
+pathb='covid-19_r'
+pathr='CRWHO'
 paths=pathr
 #main part
 for n in range(s0,s1):

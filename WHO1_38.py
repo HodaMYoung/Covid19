@@ -98,8 +98,8 @@ countries' names. For instance, the name of a country like the UK were presented
 various formats including, the United Kingdom, The United Kingdom or simply United Kingdom.
 Additionally, extra spaces and characters were spotted that must have been removed."""
 
-pathb='Covid19/WHO/Reports/covid-19_r'
-pathr='Covid19/WHO/csv_files/CRWHO'
+pathb='covid-19_r'
+pathr='CRWHO'
 paths=pathr
 for n in range(1,39):
     m=n-1#the report number starts from 1, while the dfR index starts from 0

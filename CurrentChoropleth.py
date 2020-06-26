@@ -62,9 +62,9 @@ import matplotlib.font_manager as font_manager
 import shapefile
 #reading and revising the datasets
 #reading datasets
-dfCon=pd.read_csv('/Users/Hoda/Documents/CountriesWikiAllContinents.csv')
+dfCon=pd.read_csv('CountriesWikiAllContinents.csv')
 dfCon.drop(columns=['Unnamed: 0'],inplace=True)
-df=pd.read_csv('/Users/Hoda/Documents/Covid19/WHO/csv_files/CRWHO158.csv')
+df=pd.read_csv('CRWHO158.csv')
 df.drop(columns=['Unnamed: 0'],inplace=True)
 #Checking names differences between WHO report and Wikipedia
 WHO_Not_Wiki_b=df[~df['Country'].isin(dfCon['Country'].unique())]
@@ -179,7 +179,7 @@ df['CPP']=df['Total Cases']/df['Population']*1e5
 df['DPP']=df['Total Deaths']/df['Population']*1e5
 df['CFR']=df['Total Deaths']/df['Total Cases']*100
 # Opening the shapefile with geopandas
-shapefile='/Users/Hoda/Downloads/WorldCountries/worldcountries.shp'
+shapefile='worldcountries.shp'
 gdf = gdp.read_file(shapefile)[['ADMIN', 'ADM0_A3', 'geometry']]
 gdf.columns = ['Country', 'Country_code', 'geometry']
 gdf_Not_WHO_b=gdf[~gdf['Country'].isin(df['Country'].unique())]

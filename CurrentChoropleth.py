@@ -5,7 +5,7 @@
  The details and further information about the procedure of extracting data and .shp file 
  can be found in the following websites:
  
-https://gits.github.com/HodaMYoung/World-GeoJson-File/CountriesGeoJsonData.py
+https://github.com/HodaMYoung/World-GeoJson-File/CountriesGeoJsonData.py
 https://github.com/HodaMYoung/Covid19
 
 In order to be able to merge the extracted data from WHO and .shp file, modifications
